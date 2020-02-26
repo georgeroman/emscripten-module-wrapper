@@ -1504,9 +1504,9 @@
     i32.const 0
     return)
   (func (;27;) (type 1) (param i32) (result i32)
-    (local i32 i32 i32)
+    (local i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
-    local.set 3
+    local.set 9
     global.get 8
     i32.const 16
     i32.add
@@ -1519,11 +1519,32 @@
       call 0
     end
     local.get 0
-    local.set 1
+    local.set 6
     i32.const 16
     call 1
     drop
+    call 2
+    local.set 4
+    local.get 4
+    local.set 7
+    local.get 7
+    local.set 1
+    local.get 1
+    i32.const 8196
+    i32.add
+    local.set 5
+    local.get 6
+    local.set 2
+    local.get 5
+    local.get 2
+    i32.const 2
+    i32.shl
+    i32.add
+    local.set 3
     local.get 3
+    i32.const 1
+    i32.store
+    local.get 9
     global.set 8
     i32.const 0
     return)
@@ -3085,7 +3106,99 @@
     unreachable
     i32.const 0
     return)
-  (func (;40;) (type 3) (param i32 i32) (result i32)
+  (func (;40;) (type 9) (param i32 i32 i32) (result i32)
+    (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
+    global.get 8
+    local.set 27
+    global.get 8
+    i32.const 32
+    i32.add
+    global.set 8
+    global.get 8
+    global.get 9
+    i32.ge_s
+    if  ;; label = @1
+      i32.const 32
+      call 0
+    end
+    local.get 0
+    local.set 19
+    local.get 1
+    local.set 24
+    local.get 2
+    local.set 23
+    i32.const 30
+    call 1
+    drop
+    local.get 24
+    local.set 3
+    local.get 3
+    local.set 4
+    local.get 4
+    local.set 25
+    local.get 19
+    local.set 8
+    local.get 8
+    local.set 9
+    local.get 9
+    local.set 20
+    i32.const 0
+    local.set 21
+    loop  ;; label = @1
+      block  ;; label = @2
+        local.get 21
+        local.set 10
+        local.get 23
+        local.set 11
+        local.get 10
+        local.get 11
+        i32.lt_s
+        local.set 18
+        local.get 18
+        i32.eqz
+        if  ;; label = @3
+          br 1 (;@2;)
+        end
+        local.get 25
+        local.set 12
+        local.get 21
+        local.set 13
+        local.get 12
+        local.get 13
+        i32.add
+        local.set 16
+        local.get 16
+        i32.load8_s
+        local.set 14
+        local.get 20
+        local.set 15
+        local.get 21
+        local.set 5
+        local.get 15
+        local.get 5
+        i32.add
+        local.set 17
+        local.get 17
+        local.get 14
+        i32.store8
+        local.get 21
+        local.set 6
+        local.get 6
+        i32.const 1
+        i32.add
+        local.set 22
+        local.get 22
+        local.set 21
+        br 1 (;@1;)
+      end
+    end
+    local.get 19
+    local.set 7
+    local.get 27
+    global.set 8
+    local.get 7
+    return)
+  (func (;41;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 14
@@ -3139,7 +3252,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;41;) (type 3) (param i32 i32) (result i32)
+  (func (;42;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32)
     global.get 8
     local.set 5
@@ -3165,7 +3278,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;42;) (type 0) (param i32)
+  (func (;43;) (type 0) (param i32)
     (local i32 i32 i32)
     global.get 8
     local.set 3
@@ -3188,7 +3301,7 @@
     local.get 3
     global.set 8
     return)
-  (func (;43;) (type 0) (param i32)
+  (func (;44;) (type 0) (param i32)
     (local i32 i32 i32)
     global.get 8
     local.set 3
@@ -3211,7 +3324,7 @@
     local.get 3
     global.set 8
     return)
-  (func (;44;) (type 3) (param i32 i32) (result i32)
+  (func (;45;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 67
@@ -3454,7 +3567,7 @@
     end
     i32.const 0
     return)
-  (func (;45;) (type 3) (param i32 i32) (result i32)
+  (func (;46;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 14
@@ -3502,7 +3615,7 @@
     global.set 8
     i32.const -1
     return)
-  (func (;46;) (type 3) (param i32 i32) (result i32)
+  (func (;47;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 62
@@ -3712,7 +3825,7 @@
     global.set 8
     local.get 26
     return)
-  (func (;47;) (type 3) (param i32 i32) (result i32)
+  (func (;48;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 36
@@ -3842,7 +3955,7 @@
     unreachable
     i32.const 0
     return)
-  (func (;48;) (type 3) (param i32 i32) (result i32)
+  (func (;49;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 106
@@ -4268,7 +4381,7 @@
     unreachable
     i32.const 0
     return)
-  (func (;49;) (type 3) (param i32 i32) (result i32)
+  (func (;50;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 21
@@ -4344,7 +4457,7 @@
       local.set 10
       local.get 9
       local.get 10
-      call 48
+      call 49
       drop
       i32.const 0
       local.set 16
@@ -4358,7 +4471,7 @@
     unreachable
     i32.const 0
     return)
-  (func (;50;) (type 3) (param i32 i32) (result i32)
+  (func (;51;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 26
@@ -4448,7 +4561,7 @@
       local.set 4
       local.get 4
       local.get 23
-      call 49
+      call 50
       drop
       i32.const 0
       local.set 21
@@ -4462,7 +4575,7 @@
     unreachable
     i32.const 0
     return)
-  (func (;51;) (type 3) (param i32 i32) (result i32)
+  (func (;52;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 88
@@ -4768,7 +4881,7 @@
     global.set 8
     local.get 41
     return)
-  (func (;52;) (type 3) (param i32 i32) (result i32)
+  (func (;53;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 94
@@ -5113,7 +5226,7 @@
     end
     i32.const 0
     return)
-  (func (;53;) (type 3) (param i32 i32) (result i32)
+  (func (;54;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32)
     global.get 8
     local.set 5
@@ -5139,7 +5252,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;54;) (type 3) (param i32 i32) (result i32)
+  (func (;55;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 66
@@ -5368,7 +5481,7 @@
     global.set 8
     local.get 37
     return)
-  (func (;55;) (type 3) (param i32 i32) (result i32)
+  (func (;56;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 48
@@ -5534,7 +5647,7 @@
     global.set 8
     local.get 26
     return)
-  (func (;56;) (type 3) (param i32 i32) (result i32)
+  (func (;57;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 26
@@ -5615,7 +5728,7 @@
     global.set 8
     i32.const -1
     return)
-  (func (;57;) (type 3) (param i32 i32) (result i32)
+  (func (;58;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 15
@@ -5665,7 +5778,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;58;) (type 3) (param i32 i32) (result i32)
+  (func (;59;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32)
     global.get 8
     local.set 5
@@ -5691,7 +5804,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;59;) (type 1) (param i32) (result i32)
+  (func (;60;) (type 1) (param i32) (result i32)
     (local i32 i32 i32)
     global.get 8
     local.set 3
@@ -5715,7 +5828,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;60;) (type 3) (param i32 i32) (result i32)
+  (func (;61;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32)
     global.get 8
     local.set 5
@@ -5741,7 +5854,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;61;) (type 1) (param i32) (result i32)
+  (func (;62;) (type 1) (param i32) (result i32)
     (local i32 i32 i32)
     global.get 8
     local.set 3
@@ -5765,7 +5878,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;62;) (type 3) (param i32 i32) (result i32)
+  (func (;63;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32)
     global.get 8
     local.set 5
@@ -5791,7 +5904,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;63;) (type 1) (param i32) (result i32)
+  (func (;64;) (type 1) (param i32) (result i32)
     (local i32 i32 i32)
     global.get 8
     local.set 3
@@ -5815,7 +5928,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;64;) (type 1) (param i32) (result i32)
+  (func (;65;) (type 1) (param i32) (result i32)
     (local i32 i32 i32)
     global.get 8
     local.set 3
@@ -5839,7 +5952,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;65;) (type 1) (param i32) (result i32)
+  (func (;66;) (type 1) (param i32) (result i32)
     (local i32 i32 i32)
     global.get 8
     local.set 3
@@ -5863,7 +5976,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;66;) (type 3) (param i32 i32) (result i32)
+  (func (;67;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32)
     global.get 8
     local.set 5
@@ -5889,7 +6002,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;67;) (type 1) (param i32) (result i32)
+  (func (;68;) (type 1) (param i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 10
@@ -5934,7 +6047,7 @@
     global.set 8
     local.get 3
     return)
-  (func (;68;) (type 3) (param i32 i32) (result i32)
+  (func (;69;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 12
@@ -5983,7 +6096,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;69;) (type 1) (param i32) (result i32)
+  (func (;70;) (type 1) (param i32) (result i32)
     (local i32 i32 i32)
     global.get 8
     local.set 3
@@ -6007,7 +6120,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;70;) (type 3) (param i32 i32) (result i32)
+  (func (;71;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32)
     global.get 8
     local.set 5
@@ -6033,7 +6146,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;71;) (type 1) (param i32) (result i32)
+  (func (;72;) (type 1) (param i32) (result i32)
     (local i32 i32 i32)
     global.get 8
     local.set 3
@@ -6057,7 +6170,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;72;) (type 3) (param i32 i32) (result i32)
+  (func (;73;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32 i32)
     global.get 8
     local.set 15
@@ -6117,7 +6230,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;73;) (type 1) (param i32) (result i32)
+  (func (;74;) (type 1) (param i32) (result i32)
     (local i32 i32 i32)
     global.get 8
     local.set 3
@@ -6141,7 +6254,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;74;) (type 1) (param i32) (result i32)
+  (func (;75;) (type 1) (param i32) (result i32)
     (local i32 i32 i32)
     global.get 8
     local.set 3
@@ -6165,7 +6278,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;75;) (type 1) (param i32) (result i32)
+  (func (;76;) (type 1) (param i32) (result i32)
     (local i32 i32 i32)
     global.get 8
     local.set 3
@@ -6189,7 +6302,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;76;) (type 9) (param i32 i32 i32) (result i32)
+  (func (;77;) (type 9) (param i32 i32 i32) (result i32)
     (local i32 i32 i32 i32 i32)
     global.get 8
     local.set 7
@@ -6217,7 +6330,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;77;) (type 1) (param i32) (result i32)
+  (func (;78;) (type 1) (param i32) (result i32)
     (local i32 i32 i32 i32 i32)
     global.get 8
     local.set 5
@@ -6246,7 +6359,7 @@
     global.set 8
     local.get 3
     return)
-  (func (;78;) (type 3) (param i32 i32) (result i32)
+  (func (;79;) (type 3) (param i32 i32) (result i32)
     (local i32 i32 i32 i32)
     global.get 8
     local.set 5
@@ -6272,7 +6385,7 @@
     global.set 8
     i32.const 0
     return)
-  (func (;79;) (type 7)
+  (func (;80;) (type 7)
     global.get 0
     i32.const 0
     i32.add
@@ -6297,57 +6410,58 @@
   (global (;19;) (mut f64) (global.get 5))
   (global (;20;) (mut f32) (f32.const 0x0p+0 (;=0;)))
   (global (;21;) (mut f32) (f32.const 0x0p+0 (;=0;)))
-  (export "__post_instantiate" (func 79))
+  (export "__post_instantiate" (func 80))
   (export "_callArguments" (func 34))
   (export "_callMemory" (func 37))
   (export "_callReturns" (func 35))
-  (export "_env____cxa_allocate_exception" (func 77))
-  (export "_env____cxa_atexit" (func 76))
-  (export "_env____lock" (func 42))
+  (export "_env____cxa_allocate_exception" (func 78))
+  (export "_env____cxa_atexit" (func 77))
+  (export "_env____lock" (func 43))
   (export "_env____syscall140" (func 39))
-  (export "_env____syscall145" (func 51))
-  (export "_env____syscall146" (func 46))
-  (export "_env____syscall180" (func 54))
-  (export "_env____syscall181" (func 55))
-  (export "_env____syscall195" (func 45))
-  (export "_env____syscall197" (func 57))
-  (export "_env____syscall221" (func 58))
-  (export "_env____syscall295" (func 56))
-  (export "_env____syscall3" (func 44))
-  (export "_env____syscall330" (func 50))
-  (export "_env____syscall333" (func 52))
-  (export "_env____syscall334" (func 53))
-  (export "_env____syscall4" (func 47))
-  (export "_env____syscall41" (func 48))
+  (export "_env____syscall145" (func 52))
+  (export "_env____syscall146" (func 47))
+  (export "_env____syscall180" (func 55))
+  (export "_env____syscall181" (func 56))
+  (export "_env____syscall195" (func 46))
+  (export "_env____syscall197" (func 58))
+  (export "_env____syscall221" (func 59))
+  (export "_env____syscall295" (func 57))
+  (export "_env____syscall3" (func 45))
+  (export "_env____syscall330" (func 51))
+  (export "_env____syscall333" (func 53))
+  (export "_env____syscall334" (func 54))
+  (export "_env____syscall4" (func 48))
+  (export "_env____syscall41" (func 49))
   (export "_env____syscall5" (func 38))
-  (export "_env____syscall54" (func 41))
-  (export "_env____syscall6" (func 40))
-  (export "_env____syscall63" (func 49))
-  (export "_env____unlock" (func 43))
+  (export "_env____syscall54" (func 42))
+  (export "_env____syscall6" (func 41))
+  (export "_env____syscall63" (func 50))
+  (export "_env____unlock" (func 44))
+  (export "_env__emscripten_memcpy_big" (func 40))
   (export "_env__fd_close" (func 27))
   (export "_env__fd_fdstat_get" (func 25))
   (export "_env__fd_write" (func 26))
   (export "_env__getInternalFile" (func 16))
-  (export "_env__getenv" (func 75))
-  (export "_env__gettimeofday" (func 78))
+  (export "_env__getenv" (func 76))
+  (export "_env__gettimeofday" (func 79))
   (export "_env__internalSync" (func 28))
   (export "_env__internalSync2" (func 29))
-  (export "_env__pthread_cond_broadcast" (func 74))
-  (export "_env__pthread_cond_init" (func 66))
-  (export "_env__pthread_condattr_create" (func 69))
-  (export "_env__pthread_condattr_destroy" (func 71))
-  (export "_env__pthread_condattr_init" (func 65))
-  (export "_env__pthread_condattr_setclock" (func 70))
-  (export "_env__pthread_getspecific" (func 67))
-  (export "_env__pthread_key_create" (func 72))
-  (export "_env__pthread_mutex_destroy" (func 64))
-  (export "_env__pthread_mutex_init" (func 60))
-  (export "_env__pthread_mutex_lock" (func 59))
-  (export "_env__pthread_mutex_unlock" (func 73))
-  (export "_env__pthread_mutexattr_destroy" (func 63))
-  (export "_env__pthread_mutexattr_init" (func 61))
-  (export "_env__pthread_mutexattr_settype" (func 62))
-  (export "_env__pthread_setspecific" (func 68))
+  (export "_env__pthread_cond_broadcast" (func 75))
+  (export "_env__pthread_cond_init" (func 67))
+  (export "_env__pthread_condattr_create" (func 70))
+  (export "_env__pthread_condattr_destroy" (func 72))
+  (export "_env__pthread_condattr_init" (func 66))
+  (export "_env__pthread_condattr_setclock" (func 71))
+  (export "_env__pthread_getspecific" (func 68))
+  (export "_env__pthread_key_create" (func 73))
+  (export "_env__pthread_mutex_destroy" (func 65))
+  (export "_env__pthread_mutex_init" (func 61))
+  (export "_env__pthread_mutex_lock" (func 60))
+  (export "_env__pthread_mutex_unlock" (func 74))
+  (export "_env__pthread_mutexattr_destroy" (func 64))
+  (export "_env__pthread_mutexattr_init" (func 62))
+  (export "_env__pthread_mutexattr_settype" (func 63))
+  (export "_env__pthread_setspecific" (func 69))
   (export "_finalizeSystem" (func 24))
   (export "_getReturn" (func 36))
   (export "_initSystem" (func 23)))

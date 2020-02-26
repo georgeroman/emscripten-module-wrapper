@@ -245,6 +245,8 @@ int env__fd_write(int fd, struct iovec *iovs, int iovs_len, int *nwritten) {
 
 int env__fd_close(int fd) {
   debugInt(16);
+  struct system *s = getSystem();
+  s->closed[fd] = 1;
   return 0;
 }
 
