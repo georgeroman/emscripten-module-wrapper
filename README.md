@@ -17,19 +17,14 @@ Install emscripten:
 
 ```bash
 #You can place this wherever, root directory is recommended
-git clone https://github.com/juj/emsdk.git
+git clone https://github.com/emscripten-core/emsdk
 
 cd emsdk
 
-LLVM_CMAKE_ARGS="-DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD=WebAssembly" 
-./emsdk install sdk-tag-1.37.28-64bit
-./emsdk activate sdk-tag-1.37.28-64bit
-source ./emsdk_env.sh #this sets up necessary path variables for current terminal session
+./emsdk install 1.38.33
+./emsdk activate 1.38.33
+source ./emsdk_env.sh # This sets up necessary path variables for current terminal session
 ```
-
-For more instructions for running emscripten to compile wasm see
-https://gist.github.com/nolash/910ac3892d48d2e70232c997ffa9d55e
-and Dockerfile at https://hub.docker.com/r/mrsmkl/coindrop/
 
 Follow installation instructions for the ocaml-offchain interpreter [here](https://github.com/TrueBitFoundation/ocaml-offchain)
 
